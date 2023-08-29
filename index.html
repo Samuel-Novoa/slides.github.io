@@ -92,16 +92,64 @@
 			<!-- SECTION #3 -->
 			<section>
 				<section data-transition="slide" data-background="#b302b3">
-					<h2>Patrones Creacionales</h2>
-					<p>Los patrones de creación brindan mecanismos para la creación de objetos que aumentan la flexibilidad y la reutilización del código existente. Estos patrones permiten al programa decidir qué objetos deben crearse para un caso de uso específico.</p>
+					<h2>Patrones Estructurales</h2>
+					<p>Proporcionan soluciones eficientes para componer clases y estructuras de objetos. Utilizan el concepto de herencia para componer interfaces y definir maneras de componer objetos para obtener nuevas funcionalidades. Los patrones estructurales explican cómo ensamblar objetos y clases en estructuras más grandes mientras se mantiene la flexibilidad y eficiencia de estas estructuras</p>
 				</section>
 				<section>
-					<span>| Abstract Factory |</span>
-					<p style="font-size: xx-large;"> Este patrón proporciona una forma de encapsular la creación de objetos y permite que el código cliente trabaje con las interfaces de los productos, en lugar de trabajar directamente con clases concretas. Esto promueve la flexibilidad y el desacoplamiento en el diseño de software.</p>
+					<span>| Adapter |</span>
+					<p style="font-size: xx-large;">Este patrón permite que los objetos con interfaces incompatibles colaboren. Convierte la interfaz de una clase en otra que espera un cliente, permitiendo así que las clases con interfaces diferentes trabajen juntas.</p>
 				</section>
 				<section>
 					<span>| EJEMPLO |</span>
-					<img src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/solution1.png?id=71f2018d8bb443b9cce90d57110675e3" />
+					<img src="https://refactoring.guru/images/patterns/diagrams/adapter/solution-es.png?id=2b1c418b5b85e53a37ea4bdad18064d6" />
+				</section>
+				<section>
+					<span>| Bridge |</span>
+					<p style="font-size: xx-large;">Este patrón desacopla una abstracción de su implementación para que puedan variar independientemente. Permite dividir una clase grande o un grupo de clases estrechamente relacionadas en dos jerarquías separadas (abstracción e implementación) que pueden desarrollarse independientemente la una de la otra.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/bridge/solution-es.png?id=ea5b0ca5eb04228838c3079bd7d877d6" />
+				</section>
+				<section>
+					<span>| Composite |</span>
+					<p style="font-size: xx-large;">Este patrón permite componer objetos en estructuras de árbol y trabajar con esas estructuras como si fueran objetos individuales. Es especialmente útil cuando se necesita realizar operaciones en estructuras de datos dinámicas con jerarquías complejas.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/composite/problem-es.png?id=3b02eaf4b7744eb05b261ac48d3d3e4a" />
+				</section>
+				<section>
+					<span>| Decorator |</span>
+					<p style="font-size: xx-large;">Este patrón permite añadir funcionalidades a objetos colocando estos objetos dentro de objetos encapsuladores especiales que contienen estas funcionalidades. Agrega responsabilidades adicionales a un objeto de manera dinámica y permite extender funcionalidades de una clase sin tener que recurrir a la herencia.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/decorator/decorator.png?id=710c66670c7123e0928d3b3758aea79e" />
+				</section>
+				<section>
+					<span>| Facade |</span>
+					<p style="font-size: xx-large;">Este patrón proporciona una interfaz simplificada a una biblioteca, un framework o cualquier otro grupo complejo de clases. Provee una interfaz unificada para un grupo de interfaces en un subsistema, de manera que esta funcione como una interfaz de alto nivel que hace al resto de las interfaces fácil de usar.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/facade/facade.png?id=1f4be17305b6316fbd548edf1937ac3b" />
+				</section>
+				<section>
+					<span>| Flyweight |</span>
+					<p style="font-size: xx-large;">Este patrón permite mantener más objetos dentro de la cantidad disponible de memoria RAM compartiendo las partes comunes del estado entre varios objetos en lugar de mantener toda la información en cada objeto. Es útil para la creación eficiente de numerosos objetos de grano fino.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/flyweight/flyweight.png?id=e34fbacb847dd609b5e68aaf252c4db0" />
+				</section>
+				<section>
+					<span>| Proxy |</span>
+					<p style="font-size: xx-large;">Este patrón proporciona un sustituto o marcador de posición para otro objeto. Un proxy controla el acceso al objeto original, permitiendo hacer algo antes o después de que la solicitud llegue al objeto original.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/proxy/structure-indexed.png?id=e56d420f31925b3d41348c5036d3cd64" />
 				</section>
 			</section>
 			<!-- SECTION #4 -->
