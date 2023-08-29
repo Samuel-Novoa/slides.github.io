@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/theme/league.css">
 
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -34,114 +34,74 @@
 
 			<!-- SECTION #1 -->
 			<section data-background-video="video-banner.mp4" data-background-video-loop data-background-video-muted>
-				<p style="font-family: monospace;">TIPOS DE ARCHIVOS</p>
-				<h2 class="r-fit-text">Análisis comparativo</h2>
-				<p><span style="display: inline-block;" class="fragment  fade-up">| Planos |&nbsp;</span><span
-						style="display: inline-block;" class="fragment fade-up">&nbsp;| XML |</span><span
-						style="display: inline-block;" class="fragment fade-up">&nbsp;| JSON |</span><span
-						style="display: inline-block;" class="fragment fade-up">&nbsp;| Parquet |</span></p>
+				<p style="font-family: monospace;">PATRONES DE DISEÑO DE</p>
+				<h2 class="r-fit-text">software</h2>
+				<p><span style="display: inline-block;" class="fragment  fade-up">| Creacionales |&nbsp;</span><span
+						style="display: inline-block;" class="fragment fade-up">&nbsp;| Estructurales |</span><span
+						style="display: inline-block;" class="fragment fade-up">&nbsp;| Comportamiento |</span></p>
 			</section>
 
 			<!-- SECTION #2 -->
 			<section>
 				<section data-transition="slide" data-background="#1d89b3">
-					<h2>Archivos</h2>
-					<p>| Planos |</p>
+					<h2>Patrones Creacionales</h2>
+					<p>Los patrones de creación brindan mecanismos para la creación de objetos que aumentan la flexibilidad y la reutilización del código existente. Estos patrones permiten al programa decidir qué objetos deben crearse para un caso de uso específico.</p>
 				</section>
 				<section>
-					<span>| Archivos Planos |</span>
-					<p style="font-size: xx-large;">Los archivos planos son un tipo de archivo de texto sin formato
-						estructurado, en el cual los
-						datos se encuentran organizados en una secuencia de caracteres. No hay ninguna jerarquía o
-						relación predefinida entre los datos, lo que los hace fáciles de leer y editar, pero
-						difíciles
-						de procesar por computadora sin procesamiento adicional.</p>
-				</section>
-				<section data-transition="slide" data-background="#1d89b3">
-					<span style="font-size: large;">| Archivos Planos |</span>
-					<h2>Ejemplos</h2>
+					<span>| Abstract Factory |</span>
+					<p style="font-size: xx-large;">Este patrón proporciona una forma de encapsular la creación de objetos y permite que el código cliente trabaje con las interfaces de los productos, en lugar de trabajar directamente con clases concretas. Esto promueve la flexibilidad y el desacoplamiento en el diseño de software.</p>
 				</section>
 				<section>
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de texto sin formato (.txt)</p>
-					<p style="font-size: x-large;">Estos archivos contienen texto sin formato y no tienen ninguna
-						estructura definida. Son comunes en el procesamiento de lenguaje natural, donde se
-						utilizan para entrenar modelos de aprendizaje automático.</p>
-				</section>
-				<section data-transition="slide" data-background="#1d89b3">
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de configuración (.conf)</p>
-					<p style="font-size: x-large;">Estos archivos contienen configuraciones para aplicaciones o
-						sistemas operativos. Son comunes en sistemas operativos Linux, donde se utilizan para
-						configurar la red, el hardware y otros ajustes del sistema.</p>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/solution1.png?id=71f2018d8bb443b9cce90d57110675e3" />
 				</section>
 				<section>
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de copia de seguridad (.bak)</p>
-					<p style="font-size: x-large;">Estos archivos contienen copias de seguridad de datos o
-						información del sistema. A menudo se utilizan para restaurar datos en caso de pérdida o
-						daño del sistema.</p>
-				</section>
-				<section data-transition="slide" data-background="#1d89b3">
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de valores separados por tabulaciones (.tsv)</p>
-					<p style="font-size: x-large;">Son similares a los archivos CSV, pero utilizan tabulaciones en
-						lugar de comas para separar los valores. Se utilizan comúnmente para almacenar datos
-						tabulares.</p>
+					<span>| Builder Patterns |</span>
+					<p style="font-size: xx-large;">El patrón Builder permite una mayor flexibilidad y extensibilidad en la construcción de objetos complejos, ya que se pueden definir diferentes Builders para crear diferentes representaciones del mismo objeto. Además, ayuda a evitar la complejidad de tener un constructor con muchos parámetros y facilita la legibilidad del código.</p>
 				</section>
 				<section>
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de registro (.log)</p>
-					<p style="font-size: x-large;">Estos archivos contienen registros de eventos o actividades que
-						ocurren en un sistema o aplicación. Los archivos de registro se utilizan para el monitoreo
-						y la solución de problemas en sistemas informáticos.</p>
-				</section>
-				<section data-transition="slide" data-background="#1d89b3">
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de intercambio de datos electrónicos (.edx)</p>
-					<p style="font-size: x-large;">Estos archivos se utilizan para intercambiar datos entre
-						sistemas informáticos y no tienen una estructura definida. Son comunes en la industria de
-						la salud, donde se utilizan para compartir información del paciente entre diferentes
-						proveedores de atención médica.</p>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/builder/problem1.png?id=11e715c5c97811f848c48e0f399bb05e" />
 				</section>
 				<section>
-					<span style="font-size: large;">| Ejemplos |</span>
-					<p>Archivos de valores separados por comas (.csv)</p>
-					<p style="font-size: x-large;">Estos archivos contienen datos estructurados separados por
-						comas. Son comunes en aplicaciones como hojas de cálculo y bases de datos, donde se
-						utilizan para almacenar y compartir datos.</p>
+					<span>| Factory Method |</span>
+					<p style="font-size: xx-large;">El propósito del Factory Method es permitir que una clase delegue la creación de objetos a sus subclases. En lugar de que la clase principal instancie directamente los objetos concretos, se define un método de fábrica abstracto en la clase principal que las subclases deben implementar. Cada subclase puede decidir qué tipo de objeto concreto crear y devolver a través del método de fábrica.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/factory-method/factory-method-es.png?id=4040e2911292e5a623f10e36c380459d" />
+				</section>
+				<section>
+					<span>| Prototype |</span>
+					<p style="font-size: xx-large;">El propósito del patrón Prototype es permitir la creación de nuevos objetos mediante la clonación de un objeto existente en lugar de crear nuevos objetos desde cero. Esto evita la dependencia del código en las clases concretas de los objetos y permite la creación de nuevos objetos sin conocer los detalles de su implementación.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/prototype/prototype.png?id=e912b1ada20bbf7b2ffc09e93b9fab20" />
+				</section>
+				<section>
+					<span>| Singleton |</span>
+					<p style="font-size: xx-large;">El patrón Singleton restringe la creación de instancias de una clase a un único objeto y proporciona un punto de acceso global a dicha instancia. El propósito de este patrón es garantizar que solo exista una única instancia de una clase y proporcionar una forma de acceder a ella desde cualquier parte del código.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://img2.freepng.es/20180710/fay/kisspng-singleton-pattern-software-design-pattern-system-o-singleton-pattern-5b4452e6b087a6.7597909315312043267231.jpg" />
 				</section>
 			</section>
 
 			<!-- SECTION #3 -->
 			<section>
 				<section data-transition="slide" data-background="#b302b3">
-					<h2>Archivos</h2>
-					<p>| XML |</p>
+					<h2>Patrones Creacionales</h2>
+					<p>Los patrones de creación brindan mecanismos para la creación de objetos que aumentan la flexibilidad y la reutilización del código existente. Estos patrones permiten al programa decidir qué objetos deben crearse para un caso de uso específico.</p>
 				</section>
 				<section>
-					<span>| Archivos XML |</span>
-					<p style="font-size: xx-large;">Los archivos XML son un formato de archivo de texto que se
-						utiliza para almacenar y
-						compartir información estructurada mediante etiquetas que describen los datos de forma
-						legible por humanos y por máquinas. Este formato es ampliamente utilizado para el
-						intercambio de información entre diferentes sistemas informáticos en diversas
-						aplicaciones.</p>
+					<span>| Abstract Factory |</span>
+					<p style="font-size: xx-large;"> Este patrón proporciona una forma de encapsular la creación de objetos y permite que el código cliente trabaje con las interfaces de los productos, en lugar de trabajar directamente con clases concretas. Esto promueve la flexibilidad y el desacoplamiento en el diseño de software.</p>
 				</section>
-				<section data-transition="slide" data-background="#b302b3">
-					<span style="font-size: large;">| Archivos Planos |</span>
-					<h2>Ejemplo</h2>
-					<pre data-id="code-animation"><code class="hljs" style="background: rgba(0, 0, 0, 0.59);backdrop-filter: blur(7.7px);" data-trim data-line-numbers>
-						<persona>
-							<nombre>María</nombre>
-							<edad>28</edad>
-							<profesion>Abogada</profesion>
-						</persona>
-					</code></pre>
-					<p style="font-size: xx-large;">Este ejemplo describe una persona utilizando etiquetas XML para
-						definir los elementos que describen los datos, como el nombre, la edad y la profesión. El
-						elemento principal es <persona>, y cada uno de los atributos está contenido dentro de
-							etiquetas correspondientes.</p>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/solution1.png?id=71f2018d8bb443b9cce90d57110675e3" />
 				</section>
 			</section>
 			<!-- SECTION #4 -->
