@@ -155,111 +155,99 @@
 			<!-- SECTION #4 -->
 			<section>
 				<section data-transition="slide" data-background="#ffff00">
-					<h2>Archivos</h2>
-					<p>| JSON |</p>
+					<h2>Patrones De Comportamiento</h2>
+					<p>Los patrones de comportamiento son aquellos patrones que se centran en los algoritmos y la asignación de responsabilidades entre los objetos. Se ocupan de la comunicación entre los objetos, cómo interactúan y distribuyen la funcionalidad.</p>
 				</section>
 				<section>
-					<span>| Archivos JSON |</span>
-					<p style="font-size: xx-large;">JSON <strong>(JavaScript Object Notation)</strong> es un
-						formato de archivo de texto que se utiliza para almacenar y compartir datos estructurados.
-						Es un formato de intercambio de datos que utiliza una sintaxis similar a la de los objetos
-						en JavaScript, lo que lo hace fácilmente legible por humanos y por máquinas.</p>
+					<span>| Chain of Responsibility |</span>
+					<p style="font-size: xx-large;">Este patrón permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir una solicitud, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena.</p>
 				</section>
-				<section data-transition="slide" data-background="#ffff00">
-					<span style="font-size: large;">| Archivos Planos |</span>
-					<h2>Ejemplo</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
-						{
-							"nombre": "Juan",
-							"edad": 25,
-							"profesion": "Programador"
-						}
-					</code></pre>
-					<p style="font-size: xx-large;">Este archivo describe una persona utilizando tres pares de
-						clave-valor que describen sus atributos. Este archivo puede ser utilizado para almacenar y
-						compartir información de personas en una forma estructurada.</p>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/solution1-es.png?id=122092268f688aa2015b2f20dabafb89" />
+				</section>
+				<section>
+					<span>| Command |</span>
+					<p style="font-size: xx-large;">Este patrón de diseño convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/command/command-es.png?id=aa52c5ce63cbff0adf7dfcc5909f7eb4" />
+				</section>
+				<section>
+					<span>| Interpreter |</span>
+					<p style="font-size: xx-large;">Este patrón de diseño especifica cómo evaluar sentencias en un lenguaje. El patrón de intérprete básico utiliza una clase para representar cada símbolo gramatical.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/index/patterns-i1.png?id=ccf20fa726f8a7349011e4dff2979773" />
+				</section>
+				<section>
+					<span>| Iterator |</span>
+					<p style="font-size: xx-large;">Este patrón proporciona una forma de acceder a los elementos de un objeto agregado de manera secuencial sin exponer su representación subyacente. Es especialmente útil para recorrer una estructura de datos.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/iterator/iterator-es.png?id=79d47b82a1e72adaaa70d8e1a3b10a4e" />
+				</section>
+				<section>
+					<span>| Mediator |</span>
+					<p style="font-size: xx-large;">El patrón de mediador define un objeto que encapsula cómo un conjunto de objetos interactúan. Promueve el acoplamiento débil al evitar que los objetos se refieran entre sí explícitamente, lo que permite variar sus interacciones de forma independiente.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/mediator/example.png?id=3151c153533e816e226be0ef977211e8" />
+				</section>
+				<section>
+					<span>| Memento |</span>
+					<p style="font-size: xx-large;">Este patrón proporciona la capacidad de restaurar un objeto a su estado anterior (deshacer a través de retroceso).</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/memento/memento-es.png?id=425d7fafd404116e99e93c3d8a04ec89" />
+				</section>
+				<section>
+					<span>| Observer |</span>
+					<p style="font-size: xx-large;">Este patrón define una dependencia uno a muchos entre objetos para que cuando un objeto cambie de estado, todos sus dependientes sean notificados y actualizados automáticamente.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/observer/observer.png?id=6088e31e1b0d4a417506a66614dcf065" />
+				</section>
+				<section>
+					<span>| State |</span>
+					<p style="font-size: xx-large;">Este patrón permite a un objeto alterar su comportamiento cuando su estado interno cambia. El objeto parecerá cambiar su clase.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/state/state-es.png?id=03f2a3a86f4b58cc21b4c8c152d6c0ec" />
+				</section>
+				<section>
+					<span>| Strategy |</span>
+					<p style="font-size: xx-large;">Este patrón de diseño define una familia de algoritmos, encapsula cada uno, y los hace intercambiables. La estrategia permite que el algoritmo varíe independientemente de los clientes que lo utilizan.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/strategy/strategy-comic-1-es.png?id=1cf442d8c2d5d78f214499bb72dfdc72" />
+				</section>
+				<section>
+					<span>| Template Method |</span>
+					<p style="font-size: xx-large;">En este patrón, se define el esqueleto de un algoritmo en una operación, aplazando algunos pasos a las subclases. El método de plantilla permite que las subclases redefinan ciertos pasos de un algoritmo sin cambiar su estructura.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/diagrams/template-method/structure.png?id=924692f994bff6578d8408d90f6fc459" />
+				</section>
+				<section>
+					<span>| Visitor |</span>
+					<p style="font-size: xx-large;">Este patrón de diseño representa una operación que se realiza en los elementos de una estructura de objetos. El patrón visitante permite definir una nueva operación sin cambiar las clases de los elementos en los que opera.</p>
+				</section>
+				<section>
+					<span>| EJEMPLO |</span>
+					<img src="https://refactoring.guru/images/patterns/content/visitor/visitor-comic-1.png?id=7ee4fa8800f7c4df4e1aa3b1aca2b7f1" />
 				</section>
 			</section>
 
-			<!-- SECTION #5 -->
-			<section>
-				<section data-transition="slide" data-background="#00ffff">
-					<h2>Archivos</h2>
-					<p>| Parquet |</p>
-				</section>
-				<section>
-					<span>| Archivos Parquet |</span>
-					<p style="font-size: xx-large;">Parquet es un formato de archivo de almacenamiento de datos de
-						columnas optimizado para el procesamiento de datos en big data y sistemas distribuidos.
-						Los archivos Parquet están diseñados para mejorar el rendimiento de las consultas y el
-						procesamiento de datos en grandes conjuntos de datos.</p>
-				</section>
-				<section data-transition="slide" data-background="#00ffff">
-					<span style="font-size: large;">| Archivos Planos |</span>
-					<h2>Ejemplo</h2>
-					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
-						employee.parquet/
-						|-- nombre/
-						|   |-- Juan
-						|   |-- Ana
-						|   |-- Pedro
-						|-- edad/
-						|   |-- 25
-						|   |-- 30
-						|   |-- 35
-						|-- género/
-						|   |-- M
-						|   |-- F
-						|   |-- M
-					</code></pre>
-					<div style="display: flex;">
-						
-						<table style="font-size: large;">
-							<thead>
-								<tr>
-									<th>nombre</th>
-									<th>edad</th>
-									<th>género</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Juan</td>
-									<td>25</td>
-									<td>M</td>
-								</tr>
-								<tr>
-									<td>Ana</td>
-									<td>30</td>
-									<td>F</td>
-								</tr>
-								<tr>
-									<td>Pedro</td>
-									<td>35</td>
-									<td>M</td>
-								</tr>
-							</tbody>
-						</table>
-						<p style="font-size: large;">Este formato se basa en una estructura de archivo de columna,
-							lo que significa que los datos se almacenan por columnas en lugar de por filas, lo que
-							permite una mayor compresión y lectura selectiva de datos.</p>
-					</div>
-					
-				</section>
-			</section>
-			<!-- <section data-background-iframe="index.html" data-background-interactive>
-				<div
-					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-					<h2>Iframe Backgrounds</h2>
-					<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the
-						page in the background.</p>
-				</div>
-			</section> -->
-
-			<!-- SECTION #6 -->
-			<section>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/xpdN0w8EHHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			</section>
 			<!-- SLIDES END -->
 
 		</div>
